@@ -1,0 +1,11 @@
+locale:
+  '': 'ja_JP'
+  alternate:
+    - ja_JP
+site_name: 'middleman-tail'
+description: 'middleman 4 skeleton.'
+image:
+  '': 'http://example.com/assets/images/ogp.png'
+  type: image/png
+  width: 1200
+  height: 630

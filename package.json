@@ -1,0 +1,24 @@
+{
+  "name": "middleman-tal",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "dependencies": {
+    "gulp-cli": "^1.2.2"
+  },
+  "devDependencies": {
+    "browserify": "^13.1.0",
+    "gulp": "^3.9.1",
+    "gulp-sass": "^2.3.2",
+    "node-bourbon": "^4.2.8",
+    "node-neat": "^1.7.2",
+    "uniq": "^1.0.1",
+    "vinyl-source-stream": "^1.1.0",
+    "watchify": "^3.7.0"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Ryuichi Nonaka",
+  "license": "ISC"
+}

@@ -1,0 +1,32 @@
+doctype html
+html prefix="og: http://ogp.me/ns# fb: http://ogp.me/ns/fb# article: http://ogp.me/ns/article#"
+  head
+    meta charset="utf-8"
+    title
+      = config[:site_name]
+      - if current_article.present?
+        = ' - ' + current_article.title
+    meta name="description" content=config[:site_description]
+    meta http-equiv='X-UA-Compatible' content='IE=edge;chrome=1'
+    meta name="viewport" content="width=device-width, initial-scale=1"
+    - ogp_tags do |name, value|
+      meta property=name content=value
+    = stylesheet_link_tag 'assets/stylesheets/style'
+    = stylesheet_link_tag 'assets/stylesheets/syntax'
+    = feed_tag :atom, "#{blog.options.prefix.to_s}/feed.xml", title: "Atom Feed"
+    = javascript_include_tag 'assets/javascripts/bundle'
+  body
+    header
+      h1 = link_to config[:site_name], "/"
+    #main role="main"
+      = yield
+    aside
+      h2 Tags
+      ol
+        - blog.tags.each do |tag, articles|
+          li = link_to "#{tag} (#{articles.size})", tag_path(tag)
+
+      h2 By Year
+      ol
+        - blog.articles.group_by {|a| a.date.year }.each do |year, articles|
+          li = link_to "#{year} (#{articles.size})", blog_year_path(year)

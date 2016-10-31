@@ -1,0 +1,9 @@
+@import "bourbon";
+@import "neat-helpers";
+@import "neat";
+
+$color: #fff;
+
+body {
+  background: $color;
+}
