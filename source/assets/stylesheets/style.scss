@@ -2,6 +2,10 @@
 @import "neat-helpers";
 @import "neat";
 
+// font awesome
+$fa-font-path:   "../fonts";
+@import 'font-awesome';
+
 $color: #fff;
 
 body {

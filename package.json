@@ -11,6 +11,7 @@
     "gulp": "^3.9.1",
     "gulp-sass": "^2.3.2",
     "node-bourbon": "^4.2.8",
+    "node-font-awesome": "^1.0.2",
     "node-neat": "^1.7.2",
     "uniq": "^1.0.1",
     "vinyl-source-stream": "^1.1.0",
