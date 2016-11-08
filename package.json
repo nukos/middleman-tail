@@ -1,6 +1,6 @@
 {
   "name": "middleman-tal",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "",
   "main": "index.js",
   "dependencies": {
@@ -8,6 +8,7 @@
   },
   "devDependencies": {
     "browserify": "^13.1.0",
+    "browserify-shim": "^3.8.12",
     "gulp": "^3.9.1",
     "gulp-sass": "^2.3.2",
     "node-bourbon": "^4.2.8",
@@ -16,6 +17,9 @@
     "uniq": "^1.0.1",
     "vinyl-source-stream": "^1.1.0",
     "watchify": "^3.7.0"
+  },
+  "browserify": {
+    "transform": [ "browserify-shim" ]
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
