@@ -4,25 +4,26 @@ middleman-tail
 
 ### Feature
 * Pre install and Settings
-  * middleman-blog
-  * middleman-syntax
-  * middleman-ogp
-  * middleman-s3_sync
-  * middleman-minify-html
-* External pipeline support (Blowserify and Sass using Gulp)
-  * Blowserify
-  * Sass(Bourbon, Neat, Font-Awesome)
+  * [middleman-blog](https://github.com/middleman/middleman-blog)
+  * [middleman-syntax](https://github.com/middleman/middleman-syntax)
+  * [middleman-ogp](https://github.com/ngs/middleman-ogp)
+  * [middleman-s3_sync](https://github.com/fredjean/middleman-s3_sync)
+  * [middleman-minify-html](https://github.com/middleman/middleman-minify-html)
+* External pipeline support (Gulp)
+  * Blowserify (browserify-shim)
+  * Sass (Bourbon, Neat, Font-Awesome)
 * Slim Templates
 * Default timezone: Asia/Tokyo (UTC+9)
 
 
 1, System dependencies
 -------------------
-* [rbenv](https://github.com/sstephenson/rbenv) (Ruby: 2.3.1)
-* [ndenv](https://github.com/riywo/ndenv) (node.js: 6.6.0)
-* [bundler](http://bundler.io/) (1.13.5)
-* [middleman](https://middlemanapp.com/jp/) (4.1.10)
-* [gulp](https://github.com/gulpjs/gulp)
+* Ruby (2.3.1)
+* node.js (6.6.0)
+* [Bundler](http://bundler.io/) (1.13.5)
+* [Middleman](https://middlemanapp.com/jp/) (4.1.10)
+* [Gulp](https://github.com/gulpjs/gulp)
+* [Browserify](http://browserify.org/)
 
 2, Getting Started
 ------------
